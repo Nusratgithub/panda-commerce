@@ -14,7 +14,7 @@
   <!----------header start here--------->
   <header class="container bg-white">
     <!-- navber start here -->
-    <nav class="navbar navbar-expand-lg bg-light text-black p-4 fw-bolder">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top text-black p-3 fw-bolder">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="">
@@ -24,20 +24,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav my-3 my-lg-0 fs-5">
+          <form class="d-flex ms-5 py-3 mt-3 justify-content-center align-items-center">
+            <input type="password" class="me-2 rounded-0 rounded w-100 form-control" id="exampleInputPassword1"
+              placeholder="Enter Your Email">
+            <button type="submit" class=" px-3 rounded  btn btn-outline-success">Submit</button>
+          </form>
+          <ul class="navbar-nav ms-auto  my-lg-3 fs-5">
             <li class="nav-item text-black ">
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#Shoes">Shoes</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#Bagpackage">Bagpackage</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#Subscribe">Subscribe</a>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>
@@ -132,7 +138,7 @@
       </div>
     </section>
     <!----------catagoriees start here--------->
-  <section class="container">
+  <section class="container" id="Shoes">
     <h1 class="mt-5">Shoes</h1>
     <div class="row row-cols-1 row-cols-md-3  g-4 my-5">
       <div class="col">
@@ -170,7 +176,7 @@
       </div>
     </div>
     <!-- Backage part start here -->
-    <h1 class="mt-5">Bagpackage</h1>
+    <h1 class="mt-5" id="Bagpackage">Bagpackage</h1>
     <div class="row row-cols-1 row-cols-md-3  g-4 my-5">
       <div class="col">
         <div class="card h-100 shadow-lg border-0 rounded-5">
@@ -180,7 +186,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum tenetur fuga
               eveniet voluptate delectus enim, voluptates officia cumque.</p>
             <h2>$1289</h2>
-            <button class="btn btn-primary">Join Now<i class="ms-2 arrow fa-solid fa-arrow-right"></i></button>
+            <button class="btn btn-primary mx-auto">Join Now<i class="ms-2 arrow fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
       </div>
@@ -210,11 +216,32 @@
       </div>
     </div>
   </section>
+</main>
+<!----------Subscribr sectiopn start here--------->
+   <section style="background-color:#ffe0e4 ;" id="Subscribe" class="p-5 container text-center ">
+     <div  class="mb-4">
+        <h2 >LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+      </div>
+      <form class="d-flex justify-content-center align-items-center">
+        <input type="password" class="py-3 rounded-0 rounded-start w-50 form-control" id="exampleInputPassword1" placeholder="Enter Your Email">
+        <button type="submit" class="py-3 px-5 rounded-0 rounded-end btn btn-primary">Submit</button>
+      </form>
+   </section>
 
-  
+  <!----------footer sectiopn start here--------->
 
-  </main>
-
+    <footer>
+      <h4>Influencer products</h4>
+      <span>Copyright © 2020 influencer products <br>
+        All rights reserved</span>
+      <div class="footer-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </footer>
   
 
 
